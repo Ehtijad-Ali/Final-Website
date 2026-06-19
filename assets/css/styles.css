@@ -1,5 +1,5 @@
 :root {
-  --bg: #060606;
+  --bg: #020202;
   --surface: #0b0b0b;
   --surface-strong: #101010;
   --surface-soft: rgba(255, 255, 255, 0.04);
@@ -305,7 +305,7 @@ body.page-about,
 body.page-services,
 body.page-contact,
 body.page-testimonials {
-  background-color: #060606;
+  background-color: var(--bg);
   color: #ffffff;
 }
 
@@ -318,6 +318,15 @@ body.page-about {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Hero title two-line helper */
+.hero-line {
+  display: block;
+}
+.hero-line + .hero-line {
+  margin-top: 0.45rem;
+  line-height: 1.02;
 }
 
 .card-border {
