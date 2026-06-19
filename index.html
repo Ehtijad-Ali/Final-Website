@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HABIBI - Make Your Music Sound, Look & Rank Like a Pro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            gold: {
+              400: '#D4AF37',
+              500: '#B8941F',
+            },
+            dark: {
+              900: '#000000',
+              800: '#0a0a0a',
+              700: '#111111',
+              600: '#1a1a1a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="page-home antialiased selection:bg-gold-400 selection:text-black">
+  <div class="min-h-screen relative overflow-x-hidden">
+    
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 bg-dark-900/80 backdrop-blur-md border-b border-white/5">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex items-center justify-between">
+        <a href="homepage.html" id="nav-logo" class="flex items-center" aria-label="HABIBI">
+          <img src="assets/images/logo.svg" alt="HABIBI logo" class="w-10 h-10 object-contain">
+        </a>
+
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="homepage.html" id="nav-home" class="hover:text-gold-500 transition-colors">Home</a>
+          <a href="services.html" id="nav-services" class="hover:text-gold-500 transition-colors">Services</a>
+          <a href="about.html" id="nav-about" class="hover:text-gold-500 transition-colors">About</a>
+          <a href="testimonials.html" id="nav-testimonials" class="hover:text-gold-500 transition-colors">Testimonials</a>
+          <a href="contact.html" id="nav-contact" class="hover:text-gold-500 transition-colors">Contact</a>
+        </div>
+
+        <a href="#cta" id="nav-cta" class="hidden md:inline-flex bg-gold-500 text-dark-900 font-bold px-6 py-2.5 rounded-full hover:bg-white transition-colors text-sm">
+          Start Project
+        </a>
+
+        <button id="mobile-menu-btn" class="md:hidden text-white" aria-expanded="false" aria-label="Open navigation menu">
+          <iconify-icon icon="lucide:menu"></iconify-icon>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div data-mobile-menu class="hidden md:hidden bg-black/95 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col gap-4 py-4">
+          <a href="homepage.html" class="text-white/80 hover:text-white transition-colors">Home</a>
+          <a href="services.html" class="text-white/80 hover:text-white transition-colors">Services</a>
+          <a href="about.html" class="text-white/80 hover:text-white transition-colors">About</a>
+          <a href="testimonials.html" class="text-white/80 hover:text-white transition-colors">Testimonials</a>
+          <a href="contact.html" class="text-white/80 hover:text-white transition-colors">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-40 pb-20 lg:pt-48 lg:pb-32">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <!-- Left Content -->
+          <div class="space-y-8">
+            <div class="space-y-6">
+              <h1 class="text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
+                Make Your Music Sound,<br>
+                Look & <span class="text-gradient-gold">Rank Like a Pro</span>
+              </h1>
+              <p class="text-lg text-white/60 max-w-lg leading-relaxed">
+                Mastering, Cover Art, Google Panels & Promotion for independent artists worldwide.
+              </p>
+            </div>
+            
+            <div class="flex flex-wrap items-center gap-4">
+              <a href="#cta" id="hero-start-project" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-gold-400 text-black font-semibold hover:bg-yellow-500 transition-colors">
+                Start Your Project
+              </a>
+              <a href="#services" id="hero-view-services" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full border border-white/20 text-white font-medium hover:border-white/40 transition-colors">
+                View Services
+              </a>
+            </div>
+            
+            <div class="flex items-center gap-4 pt-6">
+              <div class="flex -space-x-3">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" class="w-10 h-10 rounded-full border-2 border-black object-cover">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" class="w-10 h-10 rounded-full border-2 border-black object-cover">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face" class="w-10 h-10 rounded-full border-2 border-black object-cover">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face" class="w-10 h-10 rounded-full border-2 border-black object-cover">
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-white">Trusted by 150+ artists</p>
+                <p class="text-xs text-white/50 flex items-center gap-1">
+                  <iconify-icon icon="lucide:globe" class="text-white/50"></iconify-icon> Worldwide
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Right Image -->
+          <div class="relative lg:pl-8">
+            <div class="relative rounded-2xl overflow-hidden bg-transparent shadow-[0_40px_120px_rgba(0,0,0,0.35)]">
+              <img src="assets/images/home hero.png" 
+                   alt="Professional music studio setup" 
+                   class="w-full h-auto object-cover">
+              <div class="absolute inset-0 bg-gradient-to-tr from-black/10 to-transparent pointer-events-none"></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Partner Logos -->
+        <div class="mt-24 p-6 glass-panel flex items-center justify-between gap-6 flex-wrap opacity-80 hover:opacity-100 transition-opacity">
+          <span class="text-[10px] uppercase tracking-[0.2em] text-white/40 font-semibold hidden lg:block">TRUSTED BY ARTISTS ON</span>
+          <div class="flex items-center gap-2"><iconify-icon icon="mdi:spotify" class="text-2xl"></iconify-icon><span class="font-medium">Spotify</span></div>
+          <div class="flex items-center gap-2"><iconify-icon icon="ic:baseline-apple" class="text-2xl"></iconify-icon><span class="font-medium">Music</span></div>
+          <div class="flex items-center gap-2"><iconify-icon icon="mdi:youtube" class="text-2xl"></iconify-icon><span class="font-medium">YouTube</span></div>
+          <div class="flex items-center gap-2"><iconify-icon icon="mdi:amazon" class="text-2xl"></iconify-icon><span class="font-medium">Amazon Music</span></div>
+          <div class="flex items-center gap-2"><span class="font-bold tracking-widest flex items-center gap-1"><iconify-icon icon="lucide:grid-3x3" class="text-lg"></iconify-icon> TIDAL</span></div>
+          <div class="flex items-center gap-2"><iconify-icon icon="simple-icons:deezer" class="text-xl"></iconify-icon><span class="font-bold">DEEZER</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+          <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 text-white/70 text-xs uppercase tracking-widest mb-6">
+            <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+            Our Services
+          </span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
+            Make Your Music Sound, Look &<br>
+            <span class="text-gradient-gold">Rank Like a Pro</span>
+          </h2>
+          <p class="text-base text-white/60 max-w-2xl mx-auto leading-relaxed">
+            Professional services designed to help independent artists sound better, look professional, and get discovered online.
+          </p>
+        </div>
+
+*** End Patch
