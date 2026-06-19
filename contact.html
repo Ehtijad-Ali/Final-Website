@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - HABIBI Music Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            gold: {
+              400: '#D4AF37',
+              500: '#B8941F',
+            },
+            dark: {
+              900: '#000000',
+              800: '#0a0a0a',
+              700: '#111111',
+              600: '#1a1a1a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="page-contact antialiased selection:bg-gold-400 selection:text-black">
+  <div class="min-h-screen relative overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 bg-dark-900/80 backdrop-blur-md border-b border-white/5">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex items-center justify-between">
+        <a href="homepage.html" class="flex items-center" aria-label="HABIBI">
+          <img src="assets/images/logo.svg" alt="HABIBI logo" class="w-10 h-10 object-contain">
+        </a>
+
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="homepage.html" class="hover:text-gold-500 transition-colors">Home</a>
+          <a href="services.html" class="flex items-center gap-1 hover:text-gold-500 transition-colors">
+            Services <iconify-icon icon="lucide:chevron-down" class="text-xs"></iconify-icon>
+          </a>
+          <a href="about.html" class="hover:text-gold-500 transition-colors">About</a>
+          <a href="testimonials.html" class="hover:text-gold-500 transition-colors">Testimonials</a>
+          <a href="contact.html" class="text-gold-500 border-b border-gold-500 pb-1">Contact</a>
+        </div>
+
+        <a href="#cta" class="hidden md:inline-flex bg-gold-500 text-dark-900 font-bold px-6 py-2.5 rounded-full hover:bg-white transition-colors text-sm">
+          Start Project
+        </a>
+
+        <button id="mobile-menu-btn" class="md:hidden text-white" aria-expanded="false" aria-label="Open navigation menu">
+          <iconify-icon icon="lucide:menu"></iconify-icon>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div data-mobile-menu class="hidden md:hidden bg-black/95 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col gap-4 py-4">
+          <a href="homepage.html" class="text-white/80 hover:text-white transition-colors">Home</a>
+          <a href="services.html" class="text-white/80 hover:text-white transition-colors">Services</a>
+          <a href="about.html" class="text-white/80 hover:text-white transition-colors">About</a>
+          <a href="testimonials.html" class="text-white/80 hover:text-white transition-colors">Testimonials</a>
+          <a href="contact.html" class="text-white/80 hover:text-white transition-colors">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-40 pb-20 lg:pt-48 lg:pb-32">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <!-- Left Content -->
+          <div class="space-y-8">
+            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 text-white/70 text-xs uppercase tracking-widest">
+              <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+              Contact
+            </span>
+            <h1 class="text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight">
+              Let's Build<br>
+              <span class="text-gradient-gold">Something Amazing</span><br>
+              Together
+            </h1>
+            <p class="text-lg text-white/60 max-w-lg leading-relaxed">
+              Have a project in mind? Our team is ready to help you with mastering, branding, promotion, and licensing services.
+            </p>
+
+            <div class="flex items-center gap-6 pt-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
+                  <iconify-icon icon="lucide:mail" class="text-gold-400"></iconify-icon>
+                </div>
+                <div>
+                  <p class="text-[10px] text-white/40 uppercase tracking-widest">Email</p>
+                  <p class="text-sm text-white font-medium">Support@habibmusicagency.com</p>
+                </div>
+              </div>
+              <div class="w-px h-10 bg-white/10"></div>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
+                  <iconify-icon icon="lucide:message-circle" class="text-gold-400"></iconify-icon>
+                </div>
+                <div>
+                  <p class="text-[10px] text-white/40 uppercase tracking-widest">WhatsApp</p>
+                  <p class="text-sm text-white font-medium">+XXX XXX XXX</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Image -->
+          <div class="relative lg:pl-8">
+            <div class="relative rounded-2xl overflow-hidden bg-transparent shadow-[0_40px_120px_rgba(0,0,0,0.35)] transform scale-110">
+              <img src="assets/images/Contact/heroc.png"
+                   alt="Music Studio"
+                   class="w-full h-auto object-cover">
+              <div class="absolute inset-0 bg-gradient-to-tr from-black/20 to-transparent pointer-events-none"></div>
+            </div>
+
+            <!-- Floating Badge -->
+            <div class="absolute -bottom-4 -left-4 glass-card rounded-xl p-4 flex items-center gap-3 shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
+              <div class="w-10 h-10 rounded-full bg-gold-400 flex items-center justify-center">
+                <iconify-icon icon="lucide:clock" class="text-black text-lg"></iconify-icon>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-white">48hr Delivery</p>
+                <p class="text-[10px] text-white/50">Average turnaround</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form & Info Section -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+          <!-- Contact Form -->
+          <div class="lg:col-span-8 glass-card rounded-2xl p-8 md:p-10">
+            <div class="flex items-center gap-3 mb-8">
+              <div class="w-10 h-10 rounded-full bg-gold-400/10 border border-gold-400/20 flex items-center justify-center">
+                <iconify-icon icon="lucide:send" class="text-gold-400"></iconify-icon>
+              </div>
+              <h2 class="text-2xl font-bold text-white">Send Us A Message</h2>
+            </div>
+
+            <form class="space-y-5">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div class="bg-white/[0.03] border border-white/10 rounded-xl px-5 py-4 flex items-center gap-3 focus-within:border-gold-400/50 transition-colors">
+                  <iconify-icon icon="lucide:user" class="text-white/30"></iconify-icon>
+                  <input type="text" placeholder="Full Name" class="bg-transparent border-none outline-none text-white w-full placeholder-white/30 text-sm">
+                </div>
+                <div class="bg-white/[0.03] border border-white/10 rounded-xl px-5 py-4 flex items-center gap-3 focus-within:border-gold-400/50 transition-colors">
+                  <iconify-icon icon="lucide:mail" class="text-white/30"></iconify-icon>
+                  <input type="email" placeholder="Email Address" class="bg-transparent border-none outline-none text-white w-full placeholder-white/30 text-sm">
+                </div>
+              </div>
+
+              <div class="bg-white/[0.03] border border-white/10 rounded-xl px-5 py-4 flex items-center gap-3 focus-within:border-gold-400/50 transition-colors">
+                <iconify-icon icon="lucide:phone" class="text-white/30"></iconify-icon>
+                <input type="tel" placeholder="Phone Number" class="bg-transparent border-none outline-none text-white w-full placeholder-white/30 text-sm">
+              </div>
+
+              <div class="bg-white/[0.03] border border-white/10 rounded-xl px-5 py-4 flex items-center gap-3 focus-within:border-gold-400/50 transition-colors relative">
+                <iconify-icon icon="lucide:briefcase" class="text-white/30"></iconify-icon>
+                <select class="bg-transparent border-none outline-none text-white w-full appearance-none text-sm cursor-pointer text-white/30">
+                  <option value="" disabled selected>Service Needed</option>
+                  <option value="mastering" class="bg-dark-800 text-white">Music Mastering</option>
+                  <option value="cover" class="bg-dark-800 text-white">Cover Art Design</option>
+                  <option value="google" class="bg-dark-800 text-white">Google Knowledge Panel</option>
+                  <option value="promotion" class="bg-dark-800 text-white">Music Promotion</option>
+                  <option value="rendering" class="bg-dark-800 text-white">Audio Rendering</option>
+                  <option value="licensing" class="bg-dark-800 text-white">Sync Licensing</option>
+                </select>
+                <iconify-icon icon="lucide:chevron-down" class="text-white/30 absolute right-5 pointer-events-none"></iconify-icon>
+              </div>
+
+              <div class="bg-white/[0.03] border border-white/10 rounded-xl px-5 py-4 flex items-start gap-3 focus-within:border-gold-400/50 transition-colors min-h-[140px]">
+                <iconify-icon icon="lucide:edit-2" class="text-white/30 mt-1"></iconify-icon>
+                <textarea placeholder="Tell us about your project..." class="bg-transparent border-none outline-none text-white w-full h-full resize-none placeholder-white/30 text-sm"></textarea>
+              </div>
+
+              <button type="button" class="w-full bg-gold-400 text-black font-bold text-base py-4 rounded-xl hover:bg-yellow-500 transition-colors flex items-center justify-center gap-2">
+                Submit Project
+                <iconify-icon icon="lucide:arrow-right" class="text-lg"></iconify-icon>
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="lg:col-span-4 space-y-5">
+            <div class="flex items-center gap-3 mb-2">
+              <div class="w-10 h-10 rounded-full bg-gold-400/10 border border-gold-400/20 flex items-center justify-center">
+                <iconify-icon icon="lucide:info" class="text-gold-400"></iconify-icon>
+              </div>
+              <h2 class="text-2xl font-bold text-white">Contact Info</h2>
+            </div>
+
+            <!-- Email -->
+            <div class="glass-card rounded-xl p-5 flex items-center gap-4 group cursor-pointer hover:border-gold-400/30 transition-colors">
+              <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/50 group-hover:bg-gold-400 group-hover:text-black group-hover:border-gold-400 transition-colors">
+                <iconify-icon icon="lucide:mail" class="text-xl"></iconify-icon>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-sm">Email</h4>
+                <p class="text-xs text-white/40">Support@habibmusicagency.com</p>
+              </div>
+            </div>
+
+            <!-- WhatsApp -->
+            <div class="glass-card rounded-xl p-5 flex items-center gap-4 group cursor-pointer hover:border-gold-400/30 transition-colors">
+              <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/50 group-hover:bg-gold-400 group-hover:text-black group-hover:border-gold-400 transition-colors">
+                <iconify-icon icon="lucide:message-circle" class="text-xl"></iconify-icon>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-sm">WhatsApp</h4>
+                <p class="text-xs text-white/40">+XXX XXX XXX</p>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="glass-card rounded-xl p-5 flex items-center gap-4 group cursor-pointer hover:border-gold-400/30 transition-colors">
+              <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/50 group-hover:bg-gold-400 group-hover:text-black group-hover:border-gold-400 transition-colors">
+                <iconify-icon icon="lucide:map-pin" class="text-xl"></iconify-icon>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-sm">Location</h4>
+                <p class="text-xs text-white/40">Worldwide Remote Services</p>
+              </div>
+            </div>
+
+            <!-- Working Hours -->
+            <div class="glass-card rounded-xl p-5 flex items-center gap-4 group cursor-pointer hover:border-gold-400/30 transition-colors">
+              <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/50 group-hover:bg-gold-400 group-hover:text-black group-hover:border-gold-400 transition-colors">
+                <iconify-icon icon="lucide:clock" class="text-xl"></iconify-icon>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-sm">Working Hours</h4>
+                <p class="text-[10px] text-white/40 leading-tight">
+                  Monday – Friday<br>
+                  10:00 AM – 7:00 PM (UTC)
+                </p>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="glass-card rounded-xl p-5">
+              <h4 class="font-bold text-white text-sm mb-4">Follow Us</h4>
+              <div class="flex items-center gap-3">
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/50 hover:bg-gold-400 hover:text-black hover:border-gold-400 transition-colors">
+                  <iconify-icon icon="lucide:instagram" class="text-lg"></iconify-icon>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/50 hover:bg-gold-400 hover:text-black hover:border-gold-400 transition-colors">
+                  <iconify-icon icon="lucide:youtube" class="text-lg"></iconify-icon>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/50 hover:bg-gold-400 hover:text-black hover:border-gold-400 transition-colors">
+                  <iconify-icon icon="lucide:twitter" class="text-lg"></iconify-icon>
+                </a>
+                <a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/50 hover:bg-gold-400 hover:text-black hover:border-gold-400 transition-colors">
+                  <iconify-icon icon="lucide:music" class="text-lg"></iconify-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Contact Us Section -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+          <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 text-white/70 text-xs uppercase tracking-widest mb-6">
+            <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+            Why Contact Us
+          </span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
+            We're Here To Help You <span class="text-gradient-gold">Succeed</span>
+          </h2>
+          <p class="text-base text-white/60 max-w-2xl mx-auto leading-relaxed">
+            Every inquiry gets a real response. Every project gets professional attention.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card 1 -->
+          <div class="group glass-card p-8 flex flex-col items-center text-center">
+            <div class="mb-6 w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-gold-400/30 group-hover:bg-gold-400/10 transition-colors">
+              <iconify-icon icon="lucide:zap" class="text-3xl text-gold-400"></iconify-icon>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-3">Fast Response</h3>
+            <p class="text-sm text-white/50 leading-relaxed">
+              We respond quickly to all inquiries and deliver solutions on time.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="group glass-card p-8 flex flex-col items-center text-center">
+            <div class="mb-6 w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-gold-400/30 group-hover:bg-gold-400/10 transition-colors">
+              <iconify-icon icon="lucide:headphones" class="text-3xl text-gold-400"></iconify-icon>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-3">Professional Support</h3>
+            <p class="text-sm text-white/50 leading-relaxed">
+              Our experienced team is always ready to help with expert guidance.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="group glass-card p-8 flex flex-col items-center text-center">
+            <div class="mb-6 w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-gold-400/30 group-hover:bg-gold-400/10 transition-colors">
+              <iconify-icon icon="lucide:globe" class="text-3xl text-gold-400"></iconify-icon>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-3">Worldwide Service</h3>
+            <p class="text-sm text-white/50 leading-relaxed">
+              We work with artists and clients from around the world.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="group glass-card p-8 flex flex-col items-center text-center">
+            <div class="mb-6 w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:border-gold-400/30 group-hover:bg-gold-400/10 transition-colors">
+              <iconify-icon icon="lucide:rocket" class="text-3xl text-gold-400"></iconify-icon>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-3">Dedicated Team</h3>
+            <p class="text-sm text-white/50 leading-relaxed">
+              Your project is handled with care by a dedicated team of professionals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+          <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 text-white/70 text-xs uppercase tracking-widest mb-6">
+            <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+            FAQ
+          </span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
+            Frequently Asked <span class="text-gradient-gold">Questions</span>
+          </h2>
+          <p class="text-base text-white/60 max-w-2xl mx-auto leading-relaxed">
+            Everything you need to know before starting your project.
+          </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto space-y-4">
+          <!-- FAQ 1 -->
+          <div class="faq-card bg-[#050505] border border-white/10 rounded-2xl p-6 cursor-pointer hover:border-white/20 transition-colors">
+            <div class="flex items-center justify-between gap-4">
+              <div class="flex items-center gap-4 flex-1">
+                <div class="w-10 h-10 rounded-full bg-gold-400 text-black flex items-center justify-center shrink-0">
+                  <iconify-icon icon="lucide:minus" class="text-xl font-bold"></iconify-icon>
+                </div>
+                <h4 class="font-medium text-white text-base">1. How long does project delivery take?</h4>
+              </div>
+              <iconify-icon icon="lucide:chevron-down" class="text-white/40"></iconify-icon>
+            </div>
+            <div class="faq-answer mt-4 pl-14 pr-8">
+              <p class="text-sm text-white/60 leading-relaxed">
+                Most projects are delivered within 2–7 business days depending on complexity.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-card bg-[#050505] border border-white/10 rounded-2xl p-6 cursor-pointer hover:border-white/20 transition-colors">
+            <div class="flex items-center justify-between gap-4">
+              <div class="flex items-center gap-4 flex-1">
+                <div class="w-10 h-10 rounded-full bg-gold-400 text-black flex items-center justify-center shrink-0">
+                  <iconify-icon icon="lucide:plus" class="text-xl font-bold"></iconify-icon>
+                </div>
+                <h4 class="font-medium text-white text-base">2. Do you work with international clients?</h4>
+              </div>
+              <iconify-icon icon="lucide:chevron-down" class="text-white/40"></iconify-icon>
+            </div>
+            <div class="faq-answer mt-4 pl-14 pr-8">
+              <p class="text-sm text-white/60 leading-relaxed">
+                Yes — we serve artists worldwide and coordinate remote delivery across time zones.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-card bg-[#050505] border border-white/10 rounded-2xl p-6 cursor-pointer hover:border-white/20 transition-colors">
+            <div class="flex items-center justify-between gap-4">
+              <div class="flex items-center gap-4 flex-1">
+                <div class="w-10 h-10 rounded-full bg-gold-400 text-black flex items-center justify-center shrink-0">
+                  <iconify-icon icon="lucide:plus" class="text-xl font-bold"></iconify-icon>
+                </div>
+                <h4 class="font-medium text-white text-base">3. What services do you offer?</h4>
+              </div>
+              <iconify-icon icon="lucide:chevron-down" class="text-white/40"></iconify-icon>
+            </div>
+            <div class="faq-answer mt-4 pl-14 pr-8">
+              <p class="text-sm text-white/60 leading-relaxed">
+                We offer mastering, cover art design, Google Knowledge Panel optimization, promotion, audio rendering, and sync licensing.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-card bg-[#050505] border border-white/10 rounded-2xl p-6 cursor-pointer hover:border-white/20 transition-colors">
+            <div class="flex items-center justify-between gap-4">
+              <div class="flex items-center gap-4 flex-1">
+                <div class="w-10 h-10 rounded-full bg-gold-400 text-black flex items-center justify-center shrink-0">
+                  <iconify-icon icon="lucide:plus" class="text-xl font-bold"></iconify-icon>
+                </div>
+                <h4 class="font-medium text-white text-base">4. Can I request revisions?</h4>
+              </div>
+              <iconify-icon icon="lucide:chevron-down" class="text-white/40"></iconify-icon>
+            </div>
+            <div class="faq-answer mt-4 pl-14 pr-8">
+              <p class="text-sm text-white/60 leading-relaxed">
+                Absolutely. We include revision support so your final project matches your vision.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-card bg-[#050505] border border-white/10 rounded-2xl p-6 cursor-pointer hover:border-white/20 transition-colors">
+            <div class="flex items-center justify-between gap-4">
+              <div class="flex items-center gap-4 flex-1">
+                <div class="w-10 h-10 rounded-full bg-gold-400 text-black flex items-center justify-center shrink-0">
+                  <iconify-icon icon="lucide:plus" class="text-xl font-bold"></iconify-icon>
+                </div>
+                <h4 class="font-medium text-white text-base">5. How do I start a project?</h4>
+              </div>
+              <iconify-icon icon="lucide:chevron-down" class="text-white/40"></iconify-icon>
+            </div>
+            <div class="faq-answer mt-4 pl-14 pr-8">
+              <p class="text-sm text-white/60 leading-relaxed">
+                Simply submit your details through the contact form or email us directly and we’ll follow up with next steps.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="relative rounded-3xl overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Concert crowd" class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/80 mix-blend-multiply"></div>
+          <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/90"></div>
+
+          <div class="relative z-10 py-20 px-6 text-center">
+            <span class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-white/10 bg-black/50 backdrop-blur-md text-white/80 text-xs uppercase tracking-widest mb-8">
+              Let's Work Together
+            </span>
+
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-8 leading-tight">
+              Ready To Start<br>
+              <span class="text-gradient-gold">Your Project?</span>
+            </h2>
+
+            <p class="text-base text-white/70 max-w-2xl mx-auto mb-10 leading-relaxed">
+              From mastering and cover art to Google panels and promotion — everything you need to grow as an artist.
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center gap-4">
+              <a href="homepage.html" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-gold-400 text-black font-semibold hover:bg-yellow-500 transition-colors">
+                Start Your Project
+              </a>
+              <a href="homepage.html" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full border border-white/20 text-white font-medium hover:bg-white/10 transition-colors backdrop-blur-sm">
+                Book A Consultation
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/5 bg-dark-900/80 backdrop-blur-md pt-20 pb-8">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          <!-- Brand -->
+          <div class="md:col-span-1">
+            <a href="homepage.html" class="flex items-center mb-6" aria-label="HABIBI">
+              <img src="assets/images/logo.svg" alt="HABIBI logo" class="w-10 h-10 object-contain">
+            </a>
+            <p class="text-sm text-white/50 leading-relaxed mb-6">
+              Helping artists sound professional, look credible and get discovered online.
+            </p>
+            <div class="flex items-center gap-4">
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="text-white/50 hover:text-white transition-colors">
+                <iconify-icon icon="lucide:instagram" class="text-xl"></iconify-icon>
+              </a>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="text-white/50 hover:text-white transition-colors">
+                <iconify-icon icon="lucide:youtube" class="text-xl"></iconify-icon>
+              </a>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="text-white/50 hover:text-white transition-colors">
+                <iconify-icon icon="lucide:message-circle" class="text-xl"></iconify-icon>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="md:col-span-1">
+            <h4 class="font-bold text-white mb-6 tracking-wide text-sm">Quick Links</h4>
+            <ul class="space-y-4">
+              <li><a href="homepage.html" class="text-sm text-white/50 hover:text-white transition-colors">Home</a></li>
+              <li><a href="about.html" class="text-sm text-white/50 hover:text-white transition-colors">About</a></li>
+              <li><a href="services.html" class="text-sm text-white/50 hover:text-white transition-colors">Services</a></li>
+              <li><a href="testimonials.html" class="text-sm text-white/50 hover:text-white transition-colors">Testimonials</a></li>
+              <li><a href="contact.html" class="text-sm text-white/50 hover:text-white transition-colors">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="md:col-span-1">
+            <h4 class="font-bold text-white mb-6 tracking-wide text-sm">Services</h4>
+            <ul class="space-y-4">
+              <li><a href="services.html" class="text-sm text-white/50 hover:text-white transition-colors">Music Mastering</a></li>
+              <li><a href="services.html" class="text-sm text-white/50 hover:text-white transition-colors">Cover Art</a></li>
+              <li><a href="services.html" class="text-sm text-white/50 hover:text-white transition-colors">Google Panel</a></li>
+              <li><a href="services.html" class="text-sm text-white/50 hover:text-white transition-colors">Lyric Video</a></li>
+              <li><a href="services.html" class="text-sm text-white/50 hover:text-white transition-colors">Promotion</a></li>
+              <li><a href="services.html" class="text-sm text-white/50 hover:text-white transition-colors">Sync Licensing</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="md:col-span-1">
+            <h4 class="font-bold text-white mb-6 tracking-wide text-sm">Contact</h4>
+            <ul class="space-y-4">
+              <li><a href="mailto:hello@hmac.com" class="text-sm text-white/50 hover:text-white transition-colors">Email</a></li>
+              <li><a href="contact.html" class="text-sm text-white/50 hover:text-white transition-colors">WhatsApp</a></li>
+              <li><span class="text-sm text-white/50">Worldwide</span></li>
+              <li><span class="text-sm text-white/50">48hr Delivery</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p class="text-gray-500 text-xs">© 2026 HABIBIOFFICIAL.OPS</p>
+          <div class="flex items-center gap-4 text-xs text-gray-500">
+            <a href="privacy.html" class="hover:text-gold-500 transition-colors">Privacy Policy</a>
+            <span>•</span>
+            <a href="terms.html" class="hover:text-gold-500 transition-colors">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/js/scripts.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Services for Artists</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Satoshi', 'sans-serif'],
+            display: ['Cabinet Grotesk', 'sans-serif'],
+          },
+          colors: {
+            gold: {
+              500: '#E1C27B',
+              600: '#D4AF37',
+              900: '#3A2E0E',
+            },
+            dark: {
+              900: '#060606',
+              800: '#0F0F11',
+              700: '#161619',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="page-services">
+  <div class="min-h-screen bg-dark-900 font-sans text-gray-300 selection:bg-gold-500 selection:text-dark-900">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-dark-900/80 backdrop-blur-md border-b border-white/5">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex items-center justify-between">
+        <a href="homepage.html" class="flex items-center" aria-label="HABIBI">
+          <img src="assets/images/logo.svg" alt="HABIBI logo" class="w-10 h-10 object-contain">
+        </a>
+        
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="homepage.html" class="hover:text-gold-500 transition-colors">Home</a>
+          <a href="services.html" class="text-gold-500 border-b border-gold-500 pb-1 flex items-center gap-1">
+            Services <iconify-icon icon="lucide:chevron-down" class="text-xs"></iconify-icon>
+          </a>
+          <a href="about.html" class="hover:text-gold-500 transition-colors">About</a>
+          <a href="testimonials.html" class="hover:text-gold-500 transition-colors">Testimonials</a>
+          <a href="contact.html" class="hover:text-gold-500 transition-colors">Contact</a>
+        </div>
+        
+        <a href="contact.html" class="hidden md:inline-flex bg-gold-500 text-dark-900 font-bold px-6 py-2.5 rounded-full hover:bg-white transition-colors text-sm">
+          Start Project
+        </a>
+        
+        <button id="mobile-menu-btn" class="md:hidden text-white" aria-expanded="false" aria-label="Open navigation menu">
+          <iconify-icon icon="lucide:menu"></iconify-icon>
+        </button>
+      </div>
+    </nav>
+
+    <div data-mobile-menu class="hidden bg-black/95 border-t border-white/10">
+      <div class="container flex flex-col gap-4 px-6 py-4">
+        <a href="homepage.html" class="text-white/80 hover:text-white">Home</a>
+        <a href="services.html" class="text-white/80 hover:text-white">Services</a>
+        <a href="about.html" class="text-white/80 hover:text-white">About</a>
+        <a href="testimonials.html" class="text-white/80 hover:text-white">Testimonials</a>
+        <a href="contact.html" class="text-white/80 hover:text-white">Contact</a>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 relative overflow-visible">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative">
+        <div class="relative z-20 lg:pr-10">
+          <h1 class="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-tight mb-6">
+            Professional Music <br>
+            Services <span class="text-gold-500">For Artists</span>
+          </h1>
+          <p class="text-lg md:text-xl text-gray-300 max-w-lg leading-relaxed">
+            We provide professional music solutions including mastering, cover art, promotion, branding, and licensing to help artists grow worldwide.
+          </p>
+        </div>
+        <div class="relative rounded-3xl overflow-visible min-h-[420px] lg:min-h-[520px] lg:-mr-20">
+          <img src="assets/images/services/Services.png" alt="Music Studio" class="relative z-10 w-[120%] lg:w-[140%] h-[420px] lg:h-[520px] object-cover opacity-95 -translate-x-8 lg:-translate-x-20">
+          <div class="absolute inset-0 bg-gradient-to-r from-dark-900/70 via-transparent to-transparent"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-dark-900/70 via-transparent to-transparent"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-24 bg-dark-900/60 backdrop-blur-sm border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex flex-col items-center text-center mb-16">
+          <div class="inline-flex items-center gap-2 border border-gold-500/30 rounded-full px-4 py-1.5 mb-6 text-sm text-gold-500">
+            <div class="w-1.5 h-1.5 bg-gold-500 rounded-full"></div>
+            Our Services
+          </div>
+          <h2 class="text-4xl md:text-5xl font-display font-bold text-white">
+            Complete Music <span class="text-gold-500">Solutions</span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+          <!-- Card 1 -->
+          <div class="glass-card rounded-3xl p-8 transition-all duration-300 relative group h-full flex flex-col items-center text-center justify-between">
+            <div class="absolute top-6 right-6 w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 group-hover:bg-gold-500 group-hover:text-dark-900 group-hover:border-gold-500 transition-colors">
+              <iconify-icon icon="lucide:arrow-up-right" class="text-sm"></iconify-icon>
+            </div>
+            <div class="w-14 h-14 bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-xl flex items-center justify-center mb-6 border border-indigo-500/20">
+              <iconify-icon icon="lucide:headphones" class="text-2xl text-indigo-400"></iconify-icon>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Music Mastering</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Professional track mastering for Spotify, Apple Music, YouTube Music, and radio. Get loud, clean, and streaming-ready sound that meets industry standards.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="glass-card rounded-3xl p-8 transition-all duration-300 relative group h-full flex flex-col items-center text-center justify-between">
+            <div class="absolute top-6 right-6 w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 group-hover:bg-gold-500 group-hover:text-dark-900 group-hover:border-gold-500 transition-colors">
+              <iconify-icon icon="lucide:arrow-up-right" class="text-sm"></iconify-icon>
+            </div>
+            <div class="w-14 h-14 bg-gradient-to-br from-red-500/20 to-orange-500/20 rounded-xl flex items-center justify-center mb-6 border border-red-500/20">
+              <iconify-icon icon="lucide:palette" class="text-2xl text-red-400"></iconify-icon>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Cover Art Design</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Custom cover art for singles, EPs, and albums. Designed to match your brand and meet all streaming platform requirements.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="glass-card rounded-3xl p-8 transition-all duration-300 relative group h-full flex flex-col items-center text-center justify-between">
+            <div class="absolute top-6 right-6 w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 group-hover:bg-gold-500 group-hover:text-dark-900 group-hover:border-gold-500 transition-colors">
+              <iconify-icon icon="lucide:arrow-up-right" class="text-sm"></iconify-icon>
+            </div>
+            <div class="w-14 h-14 bg-gradient-to-br from-blue-500/20 to-green-500/20 rounded-xl flex items-center justify-center mb-6 border border-blue-500/20 text-2xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-red-400 to-yellow-400">
+              G
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Google Knowledge Panel</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Claim and optimize your Google Knowledge Panel so your music profiles, social links, and artist information appear professionally on Google Search.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="glass-card rounded-3xl p-8 transition-all duration-300 relative group h-full flex flex-col justify-between">
+            <div class="absolute top-6 right-6 w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 group-hover:bg-gold-500 group-hover:text-dark-900 group-hover:border-gold-500 transition-colors">
+              <iconify-icon icon="lucide:arrow-up-right" class="text-sm"></iconify-icon>
+            </div>
+            <div class="w-14 h-14 bg-gradient-to-br from-pink-500/20 to-purple-500/20 rounded-xl flex items-center justify-center mb-6 border border-pink-500/20">
+              <iconify-icon icon="lucide:video" class="text-2xl text-pink-400"></iconify-icon>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Lyric Video Production</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Engaging lyric videos for YouTube and social media. Professionally synced lyrics with visuals that match your music and brand.
+            </p>
+          </div>
+          
+          <!-- Card 5 -->
+          <div class="glass-card rounded-3xl p-8 transition-all duration-300 relative group h-full flex flex-col justify-between lg:col-start-2">
+            <div class="absolute top-6 right-6 w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 group-hover:bg-gold-500 group-hover:text-dark-900 group-hover:border-gold-500 transition-colors">
+              <iconify-icon icon="lucide:arrow-up-right" class="text-sm"></iconify-icon>
+            </div>
+            <div class="w-14 h-14 bg-gradient-to-br from-teal-500/20 to-emerald-500/20 rounded-xl flex items-center justify-center mb-6 border border-teal-500/20">
+              <iconify-icon icon="lucide:music" class="text-2xl text-teal-400"></iconify-icon>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Music Promotion</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Strategic digital promotion designed to increase visibility, reach new audiences, and grow your music career online.
+            </p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="glass-card rounded-3xl p-8 transition-all duration-300 relative group h-full flex flex-col justify-between">
+            <div class="absolute top-6 right-6 w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 group-hover:bg-gold-500 group-hover:text-dark-900 group-hover:border-gold-500 transition-colors">
+              <iconify-icon icon="lucide:arrow-up-right" class="text-sm"></iconify-icon>
+            </div>
+            <div class="w-14 h-14 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-xl flex items-center justify-center mb-6 border border-cyan-500/20">
+              <iconify-icon icon="lucide:disc" class="text-2xl text-cyan-400"></iconify-icon>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Audio Rendering</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Clean stem exports and professionally rendered audio files. Perfectly organized and ready for mixing, mastering, or distribution.
+            </p>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="glass-card rounded-3xl p-8 transition-all duration-300 relative group h-full flex flex-col justify-between">
+            <div class="absolute top-6 right-6 w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 group-hover:bg-gold-500 group-hover:text-dark-900 group-hover:border-gold-500 transition-colors">
+              <iconify-icon icon="lucide:arrow-up-right" class="text-sm"></iconify-icon>
+            </div>
+            <div class="w-14 h-14 bg-gradient-to-br from-blue-600/20 to-indigo-600/20 rounded-xl flex items-center justify-center mb-6 border border-blue-600/20">
+              <iconify-icon icon="lucide:refresh-cw" class="text-2xl text-blue-500"></iconify-icon>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Sync Licensing</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Music licensing for films, TV shows, ads, and digital platforms.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-24">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex flex-col items-center text-center mb-20">
+          <div class="inline-flex items-center gap-2 border border-gold-500/30 rounded-full px-4 py-1.5 mb-6 text-sm text-gold-500">
+            <div class="w-1.5 h-1.5 bg-gold-500 rounded-full"></div>
+            Our Progress
+          </div>
+          <h2 class="text-4xl md:text-5xl font-display font-bold text-white">
+            How We <span class="text-gold-500">Work</span>
+          </h2>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-start justify-center gap-12 md:gap-8 max-w-5xl mx-auto">
+          
+          <!-- Step 1 -->
+          <div class="flex-1 flex flex-col items-center text-center relative w-full">
+            <div class="w-32 h-32 rounded-full border-2 border-gold-500 flex items-center justify-center mb-6 relative bg-dark-900 z-10 mx-auto md:mx-0">
+              <iconify-icon icon="lucide:file-text" class="text-4xl text-gold-500"></iconify-icon>
+              <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-gold-500 rounded-full flex items-center justify-center text-dark-900 font-bold text-sm border-4 border-dark-900">
+                1
+              </div>
+            </div>
+            <div class="hidden md:block absolute top-16 left-[60%] right-[-40%] h-[2px] bg-white/10 z-0">
+               <iconify-icon icon="lucide:arrow-right" class="absolute -right-2 -top-[11px] text-white/30 text-2xl bg-dark-900"></iconify-icon>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Submit Your Project</h3>
+            <p class="text-sm text-gray-400">
+              Share your project brief, audio files, and goals so we can assess your needs.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="flex-1 flex flex-col items-center text-center relative w-full">
+            <div class="w-32 h-32 rounded-full border-2 border-gold-500 flex items-center justify-center mb-6 relative bg-dark-900 z-10 mx-auto md:mx-0">
+              <iconify-icon icon="lucide:users" class="text-4xl text-gold-500"></iconify-icon>
+              <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-gold-500 rounded-full flex items-center justify-center text-dark-900 font-bold text-sm border-4 border-dark-900">
+                2
+              </div>
+            </div>
+             <div class="hidden md:block absolute top-16 left-[60%] right-[-40%] h-[2px] bg-white/10 z-0">
+               <iconify-icon icon="lucide:arrow-right" class="absolute -right-2 -top-[11px] text-white/30 text-2xl bg-dark-900"></iconify-icon>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Expert Review & Plan</h3>
+            <p class="text-sm text-gray-400">
+              Our team reviews your materials and prepares a tailored plan and quote.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="flex-1 flex flex-col items-center text-center relative w-full">
+            <div class="w-32 h-32 rounded-full border-2 border-gold-500 flex items-center justify-center mb-6 relative bg-dark-900 z-10 mx-auto md:mx-0">
+              <iconify-icon icon="lucide:settings" class="text-4xl text-gold-500"></iconify-icon>
+              <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-gold-500 rounded-full flex items-center justify-center text-dark-900 font-bold text-sm border-4 border-dark-900">
+                3
+              </div>
+            </div>
+             <div class="hidden md:block absolute top-16 left-[60%] right-[-40%] h-[2px] bg-white/10 z-0">
+               <iconify-icon icon="lucide:arrow-right" class="absolute -right-2 -top-[11px] text-white/30 text-2xl bg-dark-900"></iconify-icon>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Production Begins</h3>
+            <p class="text-sm text-gray-400">
+              We execute production, mixing, and mastering to bring your vision to life.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="flex-1 flex flex-col items-center text-center relative w-full">
+            <div class="w-32 h-32 rounded-full border-2 border-gold-500 flex items-center justify-center mb-6 relative bg-dark-900 z-10 mx-auto md:mx-0">
+              <iconify-icon icon="lucide:shopping-cart" class="text-4xl text-gold-500"></iconify-icon>
+              <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-gold-500 rounded-full flex items-center justify-center text-dark-900 font-bold text-sm border-4 border-dark-900">
+                4
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Delivery</h3>
+            <p class="text-sm text-gray-400">
+              Receive mastered files and assets on schedule, with revisions available as needed.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-32 overflow-hidden">
+      <div class="absolute inset-0">
+          <img src="assets/images/services/bg.jpg" alt="Crowd" class="w-full h-full object-cover opacity-40" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-dark-900/50 via-dark-900/65 to-dark-900/45"></div>
+      </div>
+      
+      <div class="relative max-w-4xl mx-auto px-6 text-center z-10">
+        <div class="inline-flex items-center gap-2 border border-gold-500/30 rounded-full px-5 py-2 mb-8 text-sm text-gold-500 bg-dark-900/50 backdrop-blur-sm">
+          Let's Works Together
+        </div>
+        
+        <h2 class="text-5xl md:text-6xl font-display font-bold text-white mb-6">
+          Ready To Start <span class="text-gold-500">Your Project?</span>
+        </h2>
+        
+        <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+          Take your music to the next level with professional mastering, branding, promotion, and licensing services. Our team is ready to help you create, grow, and succeed.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="contact.html" class="bg-gold-500 text-dark-900 font-bold px-8 py-3.5 rounded-full hover:bg-white transition-colors min-w-[200px]">
+            Start Your Project
+          </a>
+          <a href="contact.html" class="bg-transparent border border-gold-500 text-gold-500 font-bold px-8 py-3.5 rounded-full hover:bg-gold-500 hover:text-dark-900 transition-colors min-w-[200px]">
+            Free Consultation
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/5 bg-dark-900 pt-20 pb-8">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          
+          <!-- Brand -->
+          <div class="col-span-1">
+            <a href="homepage.html" class="flex items-center mb-6" aria-label="HABIBI">
+              <img src="assets/images/logo.svg" alt="HABIBI logo" class="w-12 h-12 object-contain">
+            </a>
+            <p class="text-gray-400 text-sm mb-6 max-w-xs">
+              Helping artists sound professional, look credible and get discovered online.
+            </p>
+            <div class="flex items-center gap-4">
+              <a href="https://www.instagram.com" class="text-gray-400 hover:text-gold-500 transition-colors" target="_blank" rel="noopener noreferrer">
+                <iconify-icon icon="lucide:instagram" class="text-xl"></iconify-icon>
+              </a>
+              <a href="https://www.youtube.com" class="text-gray-400 hover:text-gold-500 transition-colors" target="_blank" rel="noopener noreferrer">
+                <iconify-icon icon="lucide:youtube" class="text-xl"></iconify-icon>
+              </a>
+              <a href="mailto:hello@example.com" class="text-gray-400 hover:text-gold-500 transition-colors">
+                <iconify-icon icon="lucide:message-circle" class="text-xl"></iconify-icon>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-white font-bold mb-6">Quick Links</h4>
+            <ul class="space-y-4">
+              <li><a href="homepage.html" class="text-gray-400 hover:text-gold-500 transition-colors text-sm">Home</a></li>
+              <li><a href="about.html" class="text-gray-400 hover:text-gold-500 transition-colors text-sm">About</a></li>
+              <li><a href="services.html" class="text-gray-400 hover:text-gold-500 transition-colors text-sm">Services</a></li>
+              <li><a href="testimonials.html" class="text-gray-400 hover:text-gold-500 transition-colors text-sm">Testimonials</a></li>
+              <li><a href="contact.html" class="text-gray-400 hover:text-gold-500 transition-colors text-sm">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h4 class="text-white font-bold mb-6">Services</h4>
+            <ul class="space-y-4">
+              <li><a href="services.html" class="text-gray-400 hover:text-gold-500 transition-colors text-sm">Music Mastering</a></li>
+              <li><a href="services.html" class="text-gray-400 hover:text-gold-500 transition-colors text-sm">Cover Art</a></li>
+              <li><a href="services.html" class="text-gray-400 hover:text-gold-500 transition-colors text-sm">Google Panel</a></li>
+              <li><a href="services.html" class="text-gray-400 hover:text-gold-500 transition-colors text-sm">Lyric Video</a></li>
+              <li><a href="services.html" class="text-gray-400 hover:text-gold-500 transition-colors text-sm">Promotion</a></li>
+              <li><a href="services.html" class="text-gray-400 hover:text-gold-500 transition-colors text-sm">Sync Licensing</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h4 class="text-white font-bold mb-6">Contact</h4>
+            <ul class="space-y-4">
+              <li><a href="mailto:email@example.com" class="text-gray-400 hover:text-gold-500 transition-colors text-sm">Email</a></li>
+              <li><a href="contact.html" class="text-gray-400 hover:text-gold-500 transition-colors text-sm">WhatsApp</a></li>
+              <li><span class="text-gray-400 text-sm">Worldwide</span></li>
+              <li><span class="text-gray-400 text-sm">48hr Delivery</span></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p class="text-gray-500 text-xs">
+            © 2026 HABIBIOFFICIAL.OPS
+          </p>
+          <div class="flex items-center gap-4 text-xs text-gray-500">
+            <a href="privacy.html" class="hover:text-gold-500 transition-colors">Privacy Policy</a>
+            <span>•</span>
+            <a href="terms.html" class="hover:text-gold-500 transition-colors">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script src="assets/js/scripts.js" defer></script>
+</body>
+</html>
+
