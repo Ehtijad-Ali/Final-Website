@@ -19,14 +19,14 @@
           },
           colors: {
             gold: {
-              500: '#E1C27B',
-              600: '#D4AF37',
-              900: '#3A2E0E',
+              400: '#D4AF37',
+              500: '#B8941F',
             },
             dark: {
-              900: '#060606',
-              800: '#0F0F11',
-              700: '#161619',
+              900: '#000000',
+              800: '#0a0a0a',
+              700: '#111111',
+              600: '#1a1a1a',
             }
           }
         }
@@ -34,8 +34,8 @@
     }
   </script>
 </head>
-<body class="page-services">
-  <div class="min-h-screen bg-dark-900 font-sans text-gray-300 selection:bg-gold-500 selection:text-dark-900">
+<body class="page-services antialiased selection:bg-gold-400 selection:text-black">
+  <div class="min-h-screen bg-dark-900 font-sans text-white">
     
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 bg-dark-900/80 backdrop-blur-md border-b border-white/5">
@@ -45,16 +45,16 @@
         </a>
         
         <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-          <a href="homepage.html" class="hover:text-gold-500 transition-colors">Home</a>
-          <a href="services.html" class="text-gold-500 border-b border-gold-500 pb-1 flex items-center gap-1">
+          <a href="homepage.html" class="hover:text-gold-400 transition-colors">Home</a>
+          <a href="services.html" class="text-gold-400 border-b border-gold-400 pb-1 flex items-center gap-1">
             Services <iconify-icon icon="lucide:chevron-down" class="text-xs"></iconify-icon>
           </a>
-          <a href="about.html" class="hover:text-gold-500 transition-colors">About</a>
-          <a href="testimonials.html" class="hover:text-gold-500 transition-colors">Testimonials</a>
-          <a href="contact.html" class="hover:text-gold-500 transition-colors">Contact</a>
+          <a href="about.html" class="hover:text-gold-400 transition-colors">About</a>
+          <a href="testimonials.html" class="hover:text-gold-400 transition-colors">Testimonials</a>
+          <a href="contact.html" class="hover:text-gold-400 transition-colors">Contact</a>
         </div>
         
-        <a href="contact.html" class="hidden md:inline-flex bg-gold-500 text-dark-900 font-bold px-6 py-2.5 rounded-full hover:bg-white transition-colors text-sm">
+          <a href="contact.html" class="hidden md:inline-flex bg-gold-400 text-dark-900 font-bold px-6 py-2.5 rounded-full hover:bg-white transition-colors text-sm">
           Start Project
         </a>
         
@@ -80,17 +80,17 @@
         <div class="relative z-20 lg:pr-10">
           <h1 class="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-tight mb-6">
             Professional Music <br>
-            Services <span class="text-gold-500">For Artists</span>
+            Services <span class="text-gold-400">For Artists</span>
           </h1>
-          <p class="text-lg md:text-xl text-gray-300 max-w-lg leading-relaxed">
+          <p class="text-lg md:text-xl text-white/70 max-w-lg leading-relaxed">
             We provide professional music solutions including mastering, cover art, promotion, branding, and licensing to help artists grow worldwide.
           </p>
         </div>
-        <div class="relative rounded-3xl overflow-visible min-h-[420px] lg:min-h-[520px] lg:-mr-20">
-          <img src="assets/images/services/Services.png" alt="Music Studio" class="relative z-10 w-[120%] lg:w-[140%] h-[420px] lg:h-[520px] object-cover opacity-95 -translate-x-8 lg:-translate-x-20">
-          <div class="absolute inset-0 bg-gradient-to-r from-dark-900/70 via-transparent to-transparent"></div>
-          <div class="absolute inset-0 bg-gradient-to-t from-dark-900/70 via-transparent to-transparent"></div>
-        </div>
+        <div class="relative rounded-3xl overflow-hidden min-h-[420px] lg:min-h-[520px]">
+            <img src="assets/images/services/Services.png" alt="Music Studio" class="absolute inset-0 w-full h-full object-cover opacity-95">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+          </div>
       </div>
     </section>
 
@@ -98,8 +98,8 @@
     <section class="py-24 bg-dark-900/60 backdrop-blur-sm border-t border-white/5">
       <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div class="flex flex-col items-center text-center mb-16">
-          <div class="inline-flex items-center gap-2 border border-gold-500/30 rounded-full px-4 py-1.5 mb-6 text-sm text-gold-500">
-            <div class="w-1.5 h-1.5 bg-gold-500 rounded-full"></div>
+          <div class="inline-flex items-center gap-2 border border-gold-400/30 rounded-full px-4 py-1.5 mb-6 text-sm text-gold-400">
+            <div class="w-1.5 h-1.5 bg-gold-400 rounded-full"></div>
             Our Services
           </div>
           <h2 class="text-4xl md:text-5xl font-display font-bold text-white">
