@@ -5,8 +5,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (mobileBtn && mobileMenu) {
     mobileBtn.addEventListener('click', function () {
-      mobileMenu.classList.toggle('visible');
-      mobileBtn.setAttribute('aria-expanded', mobileMenu.classList.contains('visible'));
+      // Toggle the Tailwind "hidden" utility so the mobile menu shows/hides correctly
+      mobileMenu.classList.toggle('hidden');
+      const expanded = !mobileMenu.classList.contains('hidden');
+      mobileBtn.setAttribute('aria-expanded', expanded);
     });
   }
 
